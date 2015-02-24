@@ -1,0 +1,6 @@
+framework module office365_drive_sdk {
+  umbrella header "office365_drive_sdk.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35885CDD1A97ACDF00B64F7C /* office365_discovery_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35885CDA1A97ACDE00B64F7C /* office365_discovery_sdk.framework */; };
+		35885CDE1A97ACDF00B64F7C /* office365_drive_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35885CDB1A97ACDE00B64F7C /* office365_drive_sdk.framework */; };
+		35885CDF1A97ACDF00B64F7C /* office365_odata_base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35885CDC1A97ACDE00B64F7C /* office365_odata_base.framework */; };
+		35885CE01A97AD0200B64F7C /* office365_discovery_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35885CDA1A97ACDE00B64F7C /* office365_discovery_sdk.framework */; };
+		35885CE11A97AD0200B64F7C /* office365_discovery_sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35885CDA1A97ACDE00B64F7C /* office365_discovery_sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35885CE21A97AD0200B64F7C /* office365_drive_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35885CDB1A97ACDE00B64F7C /* office365_drive_sdk.framework */; };
+		35885CE31A97AD0200B64F7C /* office365_drive_sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35885CDB1A97ACDE00B64F7C /* office365_drive_sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35885CE41A97AD0200B64F7C /* office365_odata_base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35885CDC1A97ACDE00B64F7C /* office365_odata_base.framework */; };
+		35885CE51A97AD0200B64F7C /* office365_odata_base.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35885CDC1A97ACDE00B64F7C /* office365_odata_base.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E6756961A1A45BB00250131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6756951A1A45BB00250131 /* AppDelegate.swift */; };
+		9E6756981A1A45BB00250131 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6756971A1A45BB00250131 /* MasterViewController.swift */; };
+		9E67569A1A1A45BB00250131 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6756991A1A45BB00250131 /* DetailViewController.swift */; };
+		9E67569D1A1A45BB00250131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E67569B1A1A45BB00250131 /* Main.storyboard */; };
+		9E67569F1A1A45BB00250131 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E67569E1A1A45BB00250131 /* Images.xcassets */; };
+		9E6756A21A1A45BB00250131 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E6756A01A1A45BB00250131 /* LaunchScreen.xib */; };
+		9E6756AE1A1A45BB00250131 /* SDKTesterOffice365Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6756AD1A1A45BB00250131 /* SDKTesterOffice365Tests.swift */; };
+		9E6756BD1A1A487C00250131 /* libADALiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6756BC1A1A487C00250131 /* libADALiOS.a */; };
+		9E6756CE1A1A492100250131 /* ADAL_iPad_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E6756CC1A1A492100250131 /* ADAL_iPad_Storyboard.storyboard */; };
+		9E6756CF1A1A492100250131 /* ADAL_iPhone_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E6756CD1A1A492100250131 /* ADAL_iPhone_Storyboard.storyboard */; };
+		9EB73A6B1A1C44E700D0AEF5 /* SPItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB73A6A1A1C44E700D0AEF5 /* SPItem.swift */; };
+		9EB73A711A1C47BB00D0AEF5 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EB73A6D1A1C47BB00D0AEF5 /* folder.png */; };
+		9EB73A721A1C47BB00D0AEF5 /* gif.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EB73A6E1A1C47BB00D0AEF5 /* gif.png */; };
+		9EB73A731A1C47BB00D0AEF5 /* jpg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EB73A6F1A1C47BB00D0AEF5 /* jpg.png */; };
+		9EB73A741A1C47BB00D0AEF5 /* png.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EB73A701A1C47BB00D0AEF5 /* png.png */; };
+		9EB73A771A1CCB8600D0AEF5 /* MyFilesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB73A761A1CCB8600D0AEF5 /* MyFilesController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E6756A81A1A45BB00250131 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E6756881A1A45BB00250131 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E67568F1A1A45BB00250131;
+			remoteInfo = SDKTesterOffice365;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9E6757071A1A7D3000250131 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				35885CE11A97AD0200B64F7C /* office365_discovery_sdk.framework in Embed Frameworks */,
+				35885CE51A97AD0200B64F7C /* office365_odata_base.framework in Embed Frameworks */,
+				35885CE31A97AD0200B64F7C /* office365_drive_sdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		35885CDA1A97ACDE00B64F7C /* office365_discovery_sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = office365_discovery_sdk.framework; sourceTree = "<group>"; };
+		35885CDB1A97ACDE00B64F7C /* office365_drive_sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = office365_drive_sdk.framework; sourceTree = "<group>"; };
+		35885CDC1A97ACDE00B64F7C /* office365_odata_base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = office365_odata_base.framework; sourceTree = "<group>"; };
+		9E6756901A1A45BB00250131 /* SDKTesterOffice365.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKTesterOffice365.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E6756941A1A45BB00250131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E6756951A1A45BB00250131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9E6756971A1A45BB00250131 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		9E6756991A1A45BB00250131 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9E67569C1A1A45BB00250131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E67569E1A1A45BB00250131 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9E6756A11A1A45BB00250131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9E6756A71A1A45BB00250131 /* SDKTesterOffice365Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDKTesterOffice365Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E6756AC1A1A45BB00250131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E6756AD1A1A45BB00250131 /* SDKTesterOffice365Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKTesterOffice365Tests.swift; sourceTree = "<group>"; };
+		9E6756BC1A1A487C00250131 /* libADALiOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libADALiOS.a; sourceTree = "<group>"; };
+		9E6756BF1A1A48A300250131 /* ADAuthenticationBroker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADAuthenticationBroker.h; sourceTree = "<group>"; };
+		9E6756C01A1A48A400250131 /* ADAuthenticationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADAuthenticationContext.h; sourceTree = "<group>"; };
+		9E6756C11A1A48A400250131 /* ADAuthenticationError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADAuthenticationError.h; sourceTree = "<group>"; };
+		9E6756C21A1A48A400250131 /* ADAuthenticationParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADAuthenticationParameters.h; sourceTree = "<group>"; };
+		9E6756C31A1A48A400250131 /* ADAuthenticationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADAuthenticationResult.h; sourceTree = "<group>"; };
+		9E6756C41A1A48A400250131 /* ADAuthenticationSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADAuthenticationSettings.h; sourceTree = "<group>"; };
+		9E6756C51A1A48A400250131 /* ADErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADErrorCodes.h; sourceTree = "<group>"; };
+		9E6756C61A1A48A400250131 /* ADInstanceDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADInstanceDiscovery.h; sourceTree = "<group>"; };
+		9E6756C71A1A48A400250131 /* ADLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADLogger.h; sourceTree = "<group>"; };
+		9E6756C81A1A48A400250131 /* ADTokenCacheStoreItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTokenCacheStoreItem.h; sourceTree = "<group>"; };
+		9E6756C91A1A48A400250131 /* ADTokenCacheStoreKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTokenCacheStoreKey.h; sourceTree = "<group>"; };
+		9E6756CA1A1A48A400250131 /* ADTokenCacheStoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTokenCacheStoring.h; sourceTree = "<group>"; };
+		9E6756CB1A1A48A400250131 /* ADUserInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADUserInformation.h; sourceTree = "<group>"; };
+		9E6756CC1A1A492100250131 /* ADAL_iPad_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ADAL_iPad_Storyboard.storyboard; sourceTree = "<group>"; };
+		9E6756CD1A1A492100250131 /* ADAL_iPhone_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ADAL_iPhone_Storyboard.storyboard; sourceTree = "<group>"; };
+		9E6756D01A1A496500250131 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		9EB73A6A1A1C44E700D0AEF5 /* SPItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPItem.swift; sourceTree = "<group>"; };
+		9EB73A6D1A1C47BB00D0AEF5 /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
+		9EB73A6E1A1C47BB00D0AEF5 /* gif.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gif.png; sourceTree = "<group>"; };
+		9EB73A6F1A1C47BB00D0AEF5 /* jpg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jpg.png; sourceTree = "<group>"; };
+		9EB73A701A1C47BB00D0AEF5 /* png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = png.png; sourceTree = "<group>"; };
+		9EB73A761A1CCB8600D0AEF5 /* MyFilesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFilesController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E67568D1A1A45BB00250131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E6756BD1A1A487C00250131 /* libADALiOS.a in Frameworks */,
+				35885CDD1A97ACDF00B64F7C /* office365_discovery_sdk.framework in Frameworks */,
+				35885CE01A97AD0200B64F7C /* office365_discovery_sdk.framework in Frameworks */,
+				35885CDF1A97ACDF00B64F7C /* office365_odata_base.framework in Frameworks */,
+				35885CE41A97AD0200B64F7C /* office365_odata_base.framework in Frameworks */,
+				35885CDE1A97ACDF00B64F7C /* office365_drive_sdk.framework in Frameworks */,
+				35885CE21A97AD0200B64F7C /* office365_drive_sdk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E6756A41A1A45BB00250131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E6756871A1A45BB00250131 = {
+			isa = PBXGroup;
+			children = (
+				9E6756BE1A1A48A300250131 /* ADALiOS */,
+				9E6756921A1A45BB00250131 /* SDKTesterOffice365 */,
+				9E6756AA1A1A45BB00250131 /* SDKTesterOffice365Tests */,
+				9E6756911A1A45BB00250131 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E6756911A1A45BB00250131 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E6756901A1A45BB00250131 /* SDKTesterOffice365.app */,
+				9E6756A71A1A45BB00250131 /* SDKTesterOffice365Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E6756921A1A45BB00250131 /* SDKTesterOffice365 */ = {
+			isa = PBXGroup;
+			children = (
+				9EB73A751A1CCB7000D0AEF5 /* Controllers */,
+				9EB73A6C1A1C47A800D0AEF5 /* Assets */,
+				9EB73A691A1C44BC00D0AEF5 /* Models */,
+				9E6756BB1A1A485D00250131 /* Framework */,
+				9E6756951A1A45BB00250131 /* AppDelegate.swift */,
+				9E6756971A1A45BB00250131 /* MasterViewController.swift */,
+				9E6756991A1A45BB00250131 /* DetailViewController.swift */,
+				9E67569B1A1A45BB00250131 /* Main.storyboard */,
+				9E67569E1A1A45BB00250131 /* Images.xcassets */,
+				9E6756A01A1A45BB00250131 /* LaunchScreen.xib */,
+				9E6756931A1A45BB00250131 /* Supporting Files */,
+			);
+			path = SDKTesterOffice365;
+			sourceTree = "<group>";
+		};
+		9E6756931A1A45BB00250131 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E6756CC1A1A492100250131 /* ADAL_iPad_Storyboard.storyboard */,
+				9E6756CD1A1A492100250131 /* ADAL_iPhone_Storyboard.storyboard */,
+				9E6756941A1A45BB00250131 /* Info.plist */,
+				9E6756D01A1A496500250131 /* BridgingHeader.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E6756AA1A1A45BB00250131 /* SDKTesterOffice365Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9E6756AD1A1A45BB00250131 /* SDKTesterOffice365Tests.swift */,
+				9E6756AB1A1A45BB00250131 /* Supporting Files */,
+			);
+			path = SDKTesterOffice365Tests;
+			sourceTree = "<group>";
+		};
+		9E6756AB1A1A45BB00250131 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E6756AC1A1A45BB00250131 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E6756BB1A1A485D00250131 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				35885CDA1A97ACDE00B64F7C /* office365_discovery_sdk.framework */,
+				35885CDB1A97ACDE00B64F7C /* office365_drive_sdk.framework */,
+				35885CDC1A97ACDE00B64F7C /* office365_odata_base.framework */,
+				9E6756BC1A1A487C00250131 /* libADALiOS.a */,
+			);
+			name = Framework;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		9E6756BE1A1A48A300250131 /* ADALiOS */ = {
+			isa = PBXGroup;
+			children = (
+				9E6756BF1A1A48A300250131 /* ADAuthenticationBroker.h */,
+				9E6756C01A1A48A400250131 /* ADAuthenticationContext.h */,
+				9E6756C11A1A48A400250131 /* ADAuthenticationError.h */,
+				9E6756C21A1A48A400250131 /* ADAuthenticationParameters.h */,
+				9E6756C31A1A48A400250131 /* ADAuthenticationResult.h */,
+				9E6756C41A1A48A400250131 /* ADAuthenticationSettings.h */,
+				9E6756C51A1A48A400250131 /* ADErrorCodes.h */,
+				9E6756C61A1A48A400250131 /* ADInstanceDiscovery.h */,
+				9E6756C71A1A48A400250131 /* ADLogger.h */,
+				9E6756C81A1A48A400250131 /* ADTokenCacheStoreItem.h */,
+				9E6756C91A1A48A400250131 /* ADTokenCacheStoreKey.h */,
+				9E6756CA1A1A48A400250131 /* ADTokenCacheStoring.h */,
+				9E6756CB1A1A48A400250131 /* ADUserInformation.h */,
+			);
+			path = ADALiOS;
+			sourceTree = "<group>";
+		};
+		9EB73A691A1C44BC00D0AEF5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9EB73A6A1A1C44E700D0AEF5 /* SPItem.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9EB73A6C1A1C47A800D0AEF5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9EB73A6D1A1C47BB00D0AEF5 /* folder.png */,
+				9EB73A6E1A1C47BB00D0AEF5 /* gif.png */,
+				9EB73A6F1A1C47BB00D0AEF5 /* jpg.png */,
+				9EB73A701A1C47BB00D0AEF5 /* png.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		9EB73A751A1CCB7000D0AEF5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9EB73A761A1CCB8600D0AEF5 /* MyFilesController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E67568F1A1A45BB00250131 /* SDKTesterOffice365 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E6756B11A1A45BB00250131 /* Build configuration list for PBXNativeTarget "SDKTesterOffice365" */;
+			buildPhases = (
+				9E67568C1A1A45BB00250131 /* Sources */,
+				9E67568D1A1A45BB00250131 /* Frameworks */,
+				9E67568E1A1A45BB00250131 /* Resources */,
+				9E6757071A1A7D3000250131 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDKTesterOffice365;
+			productName = SDKTesterOffice365;
+			productReference = 9E6756901A1A45BB00250131 /* SDKTesterOffice365.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E6756A61A1A45BB00250131 /* SDKTesterOffice365Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E6756B41A1A45BB00250131 /* Build configuration list for PBXNativeTarget "SDKTesterOffice365Tests" */;
+			buildPhases = (
+				9E6756A31A1A45BB00250131 /* Sources */,
+				9E6756A41A1A45BB00250131 /* Frameworks */,
+				9E6756A51A1A45BB00250131 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E6756A91A1A45BB00250131 /* PBXTargetDependency */,
+			);
+			name = SDKTesterOffice365Tests;
+			productName = SDKTesterOffice365Tests;
+			productReference = 9E6756A71A1A45BB00250131 /* SDKTesterOffice365Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E6756881A1A45BB00250131 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Richard diZerega";
+				TargetAttributes = {
+					9E67568F1A1A45BB00250131 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = PR23329S67;
+					};
+					9E6756A61A1A45BB00250131 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 9E67568F1A1A45BB00250131;
+					};
+				};
+			};
+			buildConfigurationList = 9E67568B1A1A45BB00250131 /* Build configuration list for PBXProject "SDKTesterOffice365" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E6756871A1A45BB00250131;
+			productRefGroup = 9E6756911A1A45BB00250131 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E67568F1A1A45BB00250131 /* SDKTesterOffice365 */,
+				9E6756A61A1A45BB00250131 /* SDKTesterOffice365Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E67568E1A1A45BB00250131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB73A731A1C47BB00D0AEF5 /* jpg.png in Resources */,
+				9EB73A721A1C47BB00D0AEF5 /* gif.png in Resources */,
+				9E67569D1A1A45BB00250131 /* Main.storyboard in Resources */,
+				9E6756CE1A1A492100250131 /* ADAL_iPad_Storyboard.storyboard in Resources */,
+				9E6756A21A1A45BB00250131 /* LaunchScreen.xib in Resources */,
+				9EB73A741A1C47BB00D0AEF5 /* png.png in Resources */,
+				9E6756CF1A1A492100250131 /* ADAL_iPhone_Storyboard.storyboard in Resources */,
+				9E67569F1A1A45BB00250131 /* Images.xcassets in Resources */,
+				9EB73A711A1C47BB00D0AEF5 /* folder.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E6756A51A1A45BB00250131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E67568C1A1A45BB00250131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E67569A1A1A45BB00250131 /* DetailViewController.swift in Sources */,
+				9EB73A6B1A1C44E700D0AEF5 /* SPItem.swift in Sources */,
+				9EB73A771A1CCB8600D0AEF5 /* MyFilesController.swift in Sources */,
+				9E6756981A1A45BB00250131 /* MasterViewController.swift in Sources */,
+				9E6756961A1A45BB00250131 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E6756A31A1A45BB00250131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E6756AE1A1A45BB00250131 /* SDKTesterOffice365Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E6756A91A1A45BB00250131 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E67568F1A1A45BB00250131 /* SDKTesterOffice365 */;
+			targetProxy = 9E6756A81A1A45BB00250131 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E67569B1A1A45BB00250131 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E67569C1A1A45BB00250131 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E6756A01A1A45BB00250131 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E6756A11A1A45BB00250131 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E6756AF1A1A45BB00250131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9E6756B01A1A45BB00250131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E6756B21A1A45BB00250131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SDKTesterOffice365/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SDKTesterOffice365/BridgingHeader.h;
+			};
+			name = Debug;
+		};
+		9E6756B31A1A45BB00250131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SDKTesterOffice365/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SDKTesterOffice365/BridgingHeader.h;
+			};
+			name = Release;
+		};
+		9E6756B51A1A45BB00250131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SDKTesterOffice365Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDKTesterOffice365.app/SDKTesterOffice365";
+			};
+			name = Debug;
+		};
+		9E6756B61A1A45BB00250131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SDKTesterOffice365Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDKTesterOffice365.app/SDKTesterOffice365";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E67568B1A1A45BB00250131 /* Build configuration list for PBXProject "SDKTesterOffice365" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E6756AF1A1A45BB00250131 /* Debug */,
+				9E6756B01A1A45BB00250131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E6756B11A1A45BB00250131 /* Build configuration list for PBXNativeTarget "SDKTesterOffice365" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E6756B21A1A45BB00250131 /* Debug */,
+				9E6756B31A1A45BB00250131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E6756B41A1A45BB00250131 /* Build configuration list for PBXNativeTarget "SDKTesterOffice365Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E6756B51A1A45BB00250131 /* Debug */,
+				9E6756B61A1A45BB00250131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E6756881A1A45BB00250131 /* Project object */;
+}

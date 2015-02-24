@@ -1,0 +1,6 @@
+framework module office365_files_sdk {
+  umbrella header "office365_files_sdk.h"
+
+  export *
+  module * { export * }
+}
